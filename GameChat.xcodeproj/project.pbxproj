@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD57B5C01FF16D5A00AC61C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57B5BF1FF16D5A00AC61C8 /* AppDelegate.swift */; };
+		AD57B5C21FF16D5A00AC61C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57B5C11FF16D5A00AC61C8 /* ViewController.swift */; };
+		AD57B5C51FF16D5A00AC61C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD57B5C31FF16D5A00AC61C8 /* Main.storyboard */; };
+		AD57B5C81FF16D5A00AC61C8 /* GameChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD57B5C61FF16D5A00AC61C8 /* GameChat.xcdatamodeld */; };
+		AD57B5CA1FF16D5A00AC61C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD57B5C91FF16D5A00AC61C8 /* Assets.xcassets */; };
+		AD57B5CD1FF16D5A00AC61C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD57B5CB1FF16D5A00AC61C8 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AD57B5BC1FF16D5A00AC61C8 /* GameChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD57B5BF1FF16D5A00AC61C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD57B5C11FF16D5A00AC61C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD57B5C41FF16D5A00AC61C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD57B5C71FF16D5A00AC61C8 /* GameChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GameChat.xcdatamodel; sourceTree = "<group>"; };
+		AD57B5C91FF16D5A00AC61C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD57B5CC1FF16D5A00AC61C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD57B5CE1FF16D5A00AC61C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD57B5B91FF16D5A00AC61C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD57B5B31FF16D5A00AC61C8 = {
+			isa = PBXGroup;
+			children = (
+				AD57B5BE1FF16D5A00AC61C8 /* GameChat */,
+				AD57B5BD1FF16D5A00AC61C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD57B5BD1FF16D5A00AC61C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD57B5BC1FF16D5A00AC61C8 /* GameChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD57B5BE1FF16D5A00AC61C8 /* GameChat */ = {
+			isa = PBXGroup;
+			children = (
+				AD57B5BF1FF16D5A00AC61C8 /* AppDelegate.swift */,
+				AD57B5C11FF16D5A00AC61C8 /* ViewController.swift */,
+				AD57B5C31FF16D5A00AC61C8 /* Main.storyboard */,
+				AD57B5C91FF16D5A00AC61C8 /* Assets.xcassets */,
+				AD57B5CB1FF16D5A00AC61C8 /* LaunchScreen.storyboard */,
+				AD57B5CE1FF16D5A00AC61C8 /* Info.plist */,
+				AD57B5C61FF16D5A00AC61C8 /* GameChat.xcdatamodeld */,
+			);
+			path = GameChat;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD57B5BB1FF16D5A00AC61C8 /* GameChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD57B5D11FF16D5A00AC61C8 /* Build configuration list for PBXNativeTarget "GameChat" */;
+			buildPhases = (
+				AD57B5B81FF16D5A00AC61C8 /* Sources */,
+				AD57B5B91FF16D5A00AC61C8 /* Frameworks */,
+				AD57B5BA1FF16D5A00AC61C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GameChat;
+			productName = GameChat;
+			productReference = AD57B5BC1FF16D5A00AC61C8 /* GameChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD57B5B41FF16D5A00AC61C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = idotalmor;
+				TargetAttributes = {
+					AD57B5BB1FF16D5A00AC61C8 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AD57B5B71FF16D5A00AC61C8 /* Build configuration list for PBXProject "GameChat" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD57B5B31FF16D5A00AC61C8;
+			productRefGroup = AD57B5BD1FF16D5A00AC61C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD57B5BB1FF16D5A00AC61C8 /* GameChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD57B5BA1FF16D5A00AC61C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD57B5CD1FF16D5A00AC61C8 /* LaunchScreen.storyboard in Resources */,
+				AD57B5CA1FF16D5A00AC61C8 /* Assets.xcassets in Resources */,
+				AD57B5C51FF16D5A00AC61C8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD57B5B81FF16D5A00AC61C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD57B5C81FF16D5A00AC61C8 /* GameChat.xcdatamodeld in Sources */,
+				AD57B5C21FF16D5A00AC61C8 /* ViewController.swift in Sources */,
+				AD57B5C01FF16D5A00AC61C8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AD57B5C31FF16D5A00AC61C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD57B5C41FF16D5A00AC61C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD57B5CB1FF16D5A00AC61C8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD57B5CC1FF16D5A00AC61C8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD57B5CF1FF16D5A00AC61C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD57B5D01FF16D5A00AC61C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD57B5D21FF16D5A00AC61C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GameChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = idotalmor.com.GameChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD57B5D31FF16D5A00AC61C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GameChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = idotalmor.com.GameChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD57B5B71FF16D5A00AC61C8 /* Build configuration list for PBXProject "GameChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD57B5CF1FF16D5A00AC61C8 /* Debug */,
+				AD57B5D01FF16D5A00AC61C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD57B5D11FF16D5A00AC61C8 /* Build configuration list for PBXNativeTarget "GameChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD57B5D21FF16D5A00AC61C8 /* Debug */,
+				AD57B5D31FF16D5A00AC61C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AD57B5C61FF16D5A00AC61C8 /* GameChat.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AD57B5C71FF16D5A00AC61C8 /* GameChat.xcdatamodel */,
+			);
+			currentVersion = AD57B5C71FF16D5A00AC61C8 /* GameChat.xcdatamodel */;
+			path = GameChat.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AD57B5B41FF16D5A00AC61C8 /* Project object */;
+}
