@@ -10,7 +10,6 @@ import UIKit
 import Firebase
 import FirebaseAuth
 import FBSDKLoginKit
-import SCLAlertView
 import SDWebImage
 
 class ChatListTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -55,16 +54,7 @@ class ChatListTableViewController: UIViewController, UITableViewDataSource, UITa
        //segue to tableview with users
         //self.tableView.reloadData()
         
-        let appearance = SCLAlertView.SCLAppearance(
-            showCircularIcon: true
-        )
-        let alertView = SCLAlertView(appearance: appearance)
-        let alertViewIcon = UIImage(named: "add_white") //Replace the IconImage text with
-        let txt = alertView.addTextField("Phone Number/ Email")
-        alertView.addButton("Add A Friend") {
-            print("Text value: \(txt.text)")
-        }
-        alertView.showCustom("Add a Friend", subTitle:"Search by phone or email", color: UIColor(hexString: "#BF3F34"), closeButtonTitle: "Cancel", timeout: nil, colorTextButton: 0xFFFFFF, circleIconImage: alertViewIcon, animationStyle: .topToBottom)
+
 
         var ref = Database.database().reference(withPath: "Users")
         ref.queryOrdered(byChild: "User/email").queryEqual(toValue: "talmorid@gmail.com").observe(.childAdded) { (data) in

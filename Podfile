@@ -12,6 +12,6 @@ pod 'SDWebImage', '~> 4.0'
 pod 'FBSDKCoreKit'
 pod 'FBSDKShareKit'
 pod 'FBSDKLoginKit'
-pod 'SCLAlertView',:git => 'https://github.com/vikmeup/SCLAlertView-Swift.git'
+pod 'FCAlertView'
 
 end

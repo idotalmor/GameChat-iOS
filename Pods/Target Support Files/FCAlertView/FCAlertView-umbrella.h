@@ -10,7 +10,8 @@
 #endif
 #endif
 
+#import "FCAlertView.h"
 
-FOUNDATION_EXPORT double SCLAlertViewVersionNumber;
-FOUNDATION_EXPORT const unsigned char SCLAlertViewVersionString[];
+FOUNDATION_EXPORT double FCAlertViewVersionNumber;
+FOUNDATION_EXPORT const unsigned char FCAlertViewVersionString[];
 
