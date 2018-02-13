@@ -8,16 +8,42 @@
 
 import UIKit
 import CoreData
+import Firebase
+import FirebaseAuth
+import FBSDKCoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var IsFirstLaunch : Bool = true
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //facebook
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        FirebaseApp.configure()
+        Database.database().isPersistenceEnabled = true
+
+        if let _ =  Auth.auth().currentUser{
+            
+            let storyboard = UIStoryboard(name: "ChatStoryboard", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "ChatTableView") as UIViewController
+            
+            window?.rootViewController = controller
+        }else{
+            //do nothing we already have storyboard.
+        }
         return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        
+        let handled = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, sourceApplication: options [UIApplicationOpenURLOptionsKey.sourceApplication] as! String, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
+        
+        return handled
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

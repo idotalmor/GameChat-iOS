@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>105904366167-f0msq130b6g91uho6lq5njq59b865stt.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.105904366167-f0msq130b6g91uho6lq5njq59b865stt</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBRDjo95JDqxoCdOS9QuXQjTCvWo_zmYFM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>105904366167</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>idotalmor.com.GameChat</string>
+	<key>PROJECT_ID</key>
+	<string>gamechat-1d19a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>gamechat-1d19a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:105904366167:ios:b971727a22424c46</string>
+	<key>DATABASE_URL</key>
+	<string>https://gamechat-1d19a.firebaseio.com</string>
+</dict>
+</plist>

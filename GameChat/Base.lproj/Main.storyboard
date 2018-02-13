@@ -1,24 +1,406 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mw5-SB-5Cf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Kefa.ttf">
+            <string>Kefa-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="GameChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Chatter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P39-lb-pNE">
+                                <rect key="frame" x="58.5" y="30" width="258" height="49"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="42"/>
+                                <color key="textColor" red="0.74901960779999999" green="0.2470588235" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Vo2-GD-QHu">
+                                <rect key="frame" x="30" y="116" width="315" height="124"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="eZf-lH-jiI">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="34.5"/>
+                                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" textContentType="email"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="justified" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="SEw-Jz-9cx">
+                                        <rect key="frame" x="0.0" y="44.5" width="315" height="35"/>
+                                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCK-Lv-YaY">
+                                        <rect key="frame" x="0.0" y="89.5" width="315" height="34.5"/>
+                                        <color key="backgroundColor" red="0.74977327512605541" green="0.24619752570878278" blue="0.204035031202631" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MaS-jj-XX4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="124" id="niR-JB-1Ed"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkG-8t-Rc7">
+                                <rect key="frame" x="30" y="254" width="59" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="H4B-jw-6K6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="0.74901960779999999" green="0.2470588235" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="csk-SY-SXz" kind="show" id="Q02-tE-BDp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVb-qQ-HMO">
+                                <rect key="frame" x="208" y="260" width="137" height="32"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                <state key="normal" title="Forgot Password?">
+                                    <color key="titleColor" red="0.74901960779999999" green="0.2470588235" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="QO7-o4-pv9" kind="show" id="bVu-3s-Zdi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We don't post anything on Facebook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQW-np-qDa">
+                                <rect key="frame" x="90.5" y="562" width="194" height="14"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PVb-qQ-HMO" firstAttribute="top" secondItem="Vo2-GD-QHu" secondAttribute="bottom" constant="20" id="ECc-bb-bby"/>
+                            <constraint firstItem="P39-lb-pNE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FNb-M1-83d"/>
+                            <constraint firstItem="KkG-8t-Rc7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="L6x-XL-W0b"/>
+                            <constraint firstItem="Vo2-GD-QHu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="TNw-IU-6Ni"/>
+                            <constraint firstItem="Vo2-GD-QHu" firstAttribute="top" secondItem="P39-lb-pNE" secondAttribute="bottom" constant="37" id="U7p-t3-KZD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MQW-np-qDa" secondAttribute="bottom" constant="27" id="UeM-sG-LoE"/>
+                            <constraint firstItem="P39-lb-pNE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Wne-Kr-hAB"/>
+                            <constraint firstItem="Vo2-GD-QHu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bZh-og-e0x"/>
+                            <constraint firstItem="MQW-np-qDa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bdQ-kv-w7b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vo2-GD-QHu" secondAttribute="trailing" constant="30" id="iGP-ev-7N4"/>
+                            <constraint firstItem="KkG-8t-Rc7" firstAttribute="top" secondItem="Vo2-GD-QHu" secondAttribute="bottom" constant="13.5" id="n3J-Ht-2IC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PVb-qQ-HMO" secondAttribute="trailing" constant="30" id="vec-Z4-3CQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="dFx-ZG-Q66"/>
+                    <connections>
+                        <outlet property="loginBtn" destination="vCK-Lv-YaY" id="QmG-dn-6AF"/>
+                        <outlet property="userEmail" destination="eZf-lH-jiI" id="UTy-VF-tzS"/>
+                        <outlet property="userPassword" destination="SEw-Jz-9cx" id="Wpa-Cb-i3K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="431.19999999999999" y="-693.10344827586209"/>
+        </scene>
+        <!--ChatStoryboard-->
+        <scene sceneID="Nl7-Zh-eFb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ChatStoryboard" id="XLb-6g-dbE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bn5-ni-pXS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2508" y="-822"/>
+        </scene>
+        <!--Reset Password View Controller-->
+        <scene sceneID="SjF-gy-ls0">
+            <objects>
+                <viewController id="QO7-o4-pv9" customClass="ResetPasswordViewController" customModule="GameChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VwF-yn-1wu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZy-qN-3M1">
+                                <rect key="frame" x="39.5" y="30" width="296" height="49"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="42"/>
+                                <color key="textColor" red="0.74901960779999999" green="0.2470588235" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" tag="10" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="miq-mi-lej">
+                                <rect key="frame" x="30" y="116" width="315" height="80"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="DyD-zu-4Qb">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="35"/>
+                                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ecp-Ke-FiG">
+                                        <rect key="frame" x="0.0" y="45" width="315" height="35"/>
+                                        <color key="backgroundColor" red="0.74977327510000003" green="0.2461975257" blue="0.20403503119999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="Send a password reset email">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ResetPassword:" destination="QO7-o4-pv9" eventType="touchUpInside" id="gas-az-8sx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="05m-bI-C6X"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DD4-u2-lXX" firstAttribute="trailing" secondItem="miq-mi-lej" secondAttribute="trailing" constant="30" id="H2e-3J-Jlo"/>
+                            <constraint firstItem="EZy-qN-3M1" firstAttribute="centerX" secondItem="DD4-u2-lXX" secondAttribute="centerX" id="U8n-Nz-tTA"/>
+                            <constraint firstItem="EZy-qN-3M1" firstAttribute="top" secondItem="DD4-u2-lXX" secondAttribute="top" constant="30" id="Zc1-Yp-Nce"/>
+                            <constraint firstItem="miq-mi-lej" firstAttribute="top" secondItem="EZy-qN-3M1" secondAttribute="bottom" constant="37" id="bxB-Mb-DKR"/>
+                            <constraint firstItem="miq-mi-lej" firstAttribute="leading" secondItem="DD4-u2-lXX" secondAttribute="leading" constant="30" id="hpp-Hb-QWT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DD4-u2-lXX"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="resetEmail" destination="DyD-zu-4Qb" id="eSY-lr-3Hu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kbj-pH-ZoV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1281" y="-726"/>
+        </scene>
+        <!--Create User View Controller-->
+        <scene sceneID="Qpy-FO-NYB">
+            <objects>
+                <viewController id="SC7-xp-YOH" customClass="CreateUserViewController" customModule="GameChat" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uXo-cp-rtQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="qDn-FO-n8A">
+                                <rect key="frame" x="62.5" y="87" width="250" height="273.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creating User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ZL-So-lH7">
+                                        <rect key="frame" x="42.5" y="0.0" width="165.5" height="30.5"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="27"/>
+                                        <color key="textColor" red="0.73640280961990356" green="0.30989515781402588" blue="0.2727394700050354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="aoS-UI-4SS">
+                                        <rect key="frame" x="40" y="43.5" width="170" height="170"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="170" id="FKV-og-olT"/>
+                                            <constraint firstAttribute="width" constant="170" id="Yhy-B9-5vF"/>
+                                        </constraints>
+                                    </imageView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Sf-r1-ung">
+                                        <rect key="frame" x="0.0" y="226.5" width="250" height="2"/>
+                                        <color key="tintColor" red="0.73640280960000004" green="0.30989515779999999" blue="0.27273946999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="8Lk-0f-GhR"/>
+                                        </constraints>
+                                    </progressView>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9m-5I-BLr">
+                                        <rect key="frame" x="0.0" y="241.5" width="250" height="32"/>
+                                        <color key="backgroundColor" red="0.74879807233810425" green="0.24736747145652771" blue="0.20520678162574768" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="wUa-Lx-bxo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="in Progress...">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="7ub-Nc-O8B"/>
+                                    <constraint firstAttribute="trailing" secondItem="aoS-UI-4SS" secondAttribute="trailing" constant="40" id="BQk-Oa-G64"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Sf-r1-ung" secondAttribute="trailing" id="NLV-4u-744"/>
+                                    <constraint firstItem="g9m-5I-BLr" firstAttribute="leading" secondItem="qDn-FO-n8A" secondAttribute="leading" id="W6W-9c-EPC"/>
+                                    <constraint firstItem="3Sf-r1-ung" firstAttribute="leading" secondItem="qDn-FO-n8A" secondAttribute="leading" id="X73-VK-bOw"/>
+                                    <constraint firstAttribute="height" constant="273.5" id="pEM-8U-iD6"/>
+                                    <constraint firstAttribute="trailing" secondItem="g9m-5I-BLr" secondAttribute="trailing" id="pP0-NK-lnt"/>
+                                    <constraint firstItem="aoS-UI-4SS" firstAttribute="leading" secondItem="qDn-FO-n8A" secondAttribute="leading" constant="40" id="xAY-ec-2zC"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96160084009170532" green="0.96160084009170532" blue="0.96160084009170532" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qDn-FO-n8A" firstAttribute="top" secondItem="fc3-2j-Fz8" secondAttribute="top" constant="87" id="Oh4-Zr-5Og"/>
+                            <constraint firstItem="qDn-FO-n8A" firstAttribute="centerX" secondItem="fc3-2j-Fz8" secondAttribute="centerX" id="gg9-pD-ND1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fc3-2j-Fz8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8Yu-oQ-2Q2"/>
+                    <connections>
+                        <outlet property="profileImgView" destination="aoS-UI-4SS" id="566-cN-efY"/>
+                        <outlet property="progressBar" destination="3Sf-r1-ung" id="xa3-5q-cPx"/>
+                        <segue destination="QO7-o4-pv9" kind="show" identifier="CreateToReset" id="jwW-TM-os3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B28-di-uP5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3287" y="233"/>
+        </scene>
+        <!--Signup View Controller-->
+        <scene sceneID="X9K-Ld-G7U">
+            <objects>
+                <viewController id="csk-SY-SXz" customClass="SignupViewController" customModule="GameChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YGi-6E-djn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="x01-XF-qFk">
+                                <rect key="frame" x="70.5" y="38" width="234" height="75"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Add" translatesAutoresizingMaskIntoConstraints="NO" id="eaa-QT-QP6">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="eaa-QT-QP6" secondAttribute="height" multiplier="1:1" id="1Kf-eT-e8a"/>
+                                            <constraint firstAttribute="height" constant="75" id="PoO-Lc-3hG"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfd-ED-lan">
+                                        <rect key="frame" x="88" y="0.0" width="146" height="75"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="42"/>
+                                        <color key="textColor" red="0.74901960779999999" green="0.2470588235" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kpq-P8-OcY">
+                                <rect key="frame" x="30" y="146" width="315" height="210"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Jmz-q8-kel">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="34"/>
+                                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" textContentType="name"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dUK-9P-0Ei">
+                                        <rect key="frame" x="0.0" y="44" width="315" height="34"/>
+                                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" textContentType="email"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number (optional)" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="edb-cR-gWC">
+                                        <rect key="frame" x="0.0" y="88" width="315" height="34"/>
+                                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" textContentType="tel"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4Df-0K-hhE">
+                                        <rect key="frame" x="0.0" y="132" width="315" height="34"/>
+                                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s47-93-9iH">
+                                        <rect key="frame" x="0.0" y="176" width="315" height="34"/>
+                                        <color key="backgroundColor" red="0.74977327510000003" green="0.2461975257" blue="0.20403503119999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signunFunc:" destination="csk-SY-SXz" eventType="touchUpInside" id="Q7z-XQ-rmi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="210" id="0RQ-zo-m6k"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gamecontroller" translatesAutoresizingMaskIntoConstraints="NO" id="jiA-Go-bWo">
+                                <rect key="frame" x="100" y="398" width="175" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="175" id="2JQ-xx-C2j"/>
+                                    <constraint firstAttribute="height" constant="175" id="N0M-2G-21Y"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="175" id="YW1-Q2-yTp"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="174" id="v9y-Ae-zcX"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kpq-P8-OcY" firstAttribute="leading" secondItem="9Nl-Pl-2vy" secondAttribute="leading" constant="30" id="2HZ-W5-QTd"/>
+                            <constraint firstItem="jiA-Go-bWo" firstAttribute="centerX" secondItem="9Nl-Pl-2vy" secondAttribute="centerX" id="3K6-TX-Mfo"/>
+                            <constraint firstItem="jiA-Go-bWo" firstAttribute="top" secondItem="kpq-P8-OcY" secondAttribute="bottom" constant="42" id="INg-uI-N5r"/>
+                            <constraint firstItem="kpq-P8-OcY" firstAttribute="top" secondItem="x01-XF-qFk" secondAttribute="bottom" constant="33" id="ff6-5H-koo"/>
+                            <constraint firstItem="x01-XF-qFk" firstAttribute="top" secondItem="9Nl-Pl-2vy" secondAttribute="top" constant="38" id="icl-D8-sem"/>
+                            <constraint firstItem="9Nl-Pl-2vy" firstAttribute="trailing" secondItem="kpq-P8-OcY" secondAttribute="trailing" constant="30" id="oXj-A1-lsJ"/>
+                            <constraint firstItem="x01-XF-qFk" firstAttribute="centerX" secondItem="9Nl-Pl-2vy" secondAttribute="centerX" id="w6e-ua-pAJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9Nl-Pl-2vy"/>
+                    </view>
+                    <connections>
+                        <outlet property="profileImgView" destination="eaa-QT-QP6" id="XPb-P3-qYY"/>
+                        <outlet property="signEmail" destination="dUK-9P-0Ei" id="tnn-LS-9cE"/>
+                        <outlet property="signName" destination="Jmz-q8-kel" id="Xk3-Wd-jKJ"/>
+                        <outlet property="signPassword" destination="4Df-0K-hhE" id="eeA-Pe-8ky"/>
+                        <outlet property="signPhoneNumber" destination="edb-cR-gWC" id="A3q-74-oA7"/>
+                        <segue destination="SC7-xp-YOH" kind="show" identifier="CreateUser" id="Pkz-5y-UDT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yt0-mY-WnV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2084" y="193.85307346326837"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vbX-Hg-NUe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mw5-SB-5Cf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="gK3-XR-4Sz">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.74901960779999999" green="0.2470588235" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AZg-ZP-z9T"/>
+                        <segue destination="XLb-6g-dbE" kind="custom" identifier="LoginToChatStoryboard" customClass="SegueFromLeft" customModule="GameChat" customModuleProvider="target" id="orS-Ns-d0l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ULT-aD-Igz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1887" y="-481"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Add" width="250" height="250"/>
+        <image name="gamecontroller" width="256" height="256"/>
+        <image name="placeholder" width="283" height="283"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="bVu-3s-Zdi"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

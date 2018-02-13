@@ -7,23 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5093DFF020306D14007A17B3 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5093DFEF20306D14007A17B3 /* UIColorExtension.swift */; };
+		50FAD599200B46D500DF06C3 /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FAD598200B46D500DF06C3 /* CreateUserViewController.swift */; };
+		AD22B199202A5EED00AEDC86 /* CustomSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22B198202A5EED00AEDC86 /* CustomSegues.swift */; };
+		AD38FEE02025247000CB2C9B /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD38FEDF2025247000CB2C9B /* ResetPasswordViewController.swift */; };
 		AD57B5C01FF16D5A00AC61C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57B5BF1FF16D5A00AC61C8 /* AppDelegate.swift */; };
-		AD57B5C21FF16D5A00AC61C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57B5C11FF16D5A00AC61C8 /* ViewController.swift */; };
+		AD57B5C21FF16D5A00AC61C8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57B5C11FF16D5A00AC61C8 /* LoginViewController.swift */; };
 		AD57B5C51FF16D5A00AC61C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD57B5C31FF16D5A00AC61C8 /* Main.storyboard */; };
 		AD57B5C81FF16D5A00AC61C8 /* GameChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD57B5C61FF16D5A00AC61C8 /* GameChat.xcdatamodeld */; };
 		AD57B5CA1FF16D5A00AC61C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD57B5C91FF16D5A00AC61C8 /* Assets.xcassets */; };
 		AD57B5CD1FF16D5A00AC61C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD57B5CB1FF16D5A00AC61C8 /* LaunchScreen.storyboard */; };
+		AD57B5D51FF1732000AC61C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD57B5D41FF1732000AC61C8 /* GoogleService-Info.plist */; };
+		AD6B61831FF631BD009AD906 /* ChatStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6B61821FF631BD009AD906 /* ChatStoryboard.storyboard */; };
+		AD8526B41FF2F210005CCCEB /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8526B31FF2F210005CCCEB /* SignupViewController.swift */; };
+		AD9E3A931FFA366A00448269 /* Chatlistitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9E3A921FFA366A00448269 /* Chatlistitem.swift */; };
+		AD9E3A951FFA79A500448269 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9E3A941FFA79A500448269 /* Message.swift */; };
+		ADA2BB8C1FFC28AE00DA1F6E /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA2BB8B1FFC28AE00DA1F6E /* ChatCell.swift */; };
+		ADCD646D1FFD6AAD00A2C559 /* ChatListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD646C1FFD6AAD00A2C559 /* ChatListDataSource.swift */; };
+		ADD7B96F1FF806A30030C7A4 /* ChatListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD7B96E1FF806A30030C7A4 /* ChatListTableViewController.swift */; };
+		D2577E42D5AC2BA4ACDF477F /* Pods_GameChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE281069DF171AC8183E82C /* Pods_GameChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2EE281069DF171AC8183E82C /* Pods_GameChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AA52D11896DC6EC45CCBA52 /* Pods-GameChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-GameChat/Pods-GameChat.release.xcconfig"; sourceTree = "<group>"; };
+		5093DFEF20306D14007A17B3 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		50FAD598200B46D500DF06C3 /* CreateUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
+		A899AFB6B73ADAB57EE929A5 /* Pods-GameChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GameChat/Pods-GameChat.debug.xcconfig"; sourceTree = "<group>"; };
+		AD22B198202A5EED00AEDC86 /* CustomSegues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegues.swift; sourceTree = "<group>"; };
+		AD38FEDF2025247000CB2C9B /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		AD57B5BC1FF16D5A00AC61C8 /* GameChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD57B5BF1FF16D5A00AC61C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AD57B5C11FF16D5A00AC61C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD57B5C11FF16D5A00AC61C8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AD57B5C41FF16D5A00AC61C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD57B5C71FF16D5A00AC61C8 /* GameChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GameChat.xcdatamodel; sourceTree = "<group>"; };
 		AD57B5C91FF16D5A00AC61C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD57B5CC1FF16D5A00AC61C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD57B5CE1FF16D5A00AC61C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD57B5D41FF1732000AC61C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AD6B61821FF631BD009AD906 /* ChatStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatStoryboard.storyboard; sourceTree = "<group>"; };
+		AD8526B21FF2E0FB005CCCEB /* GameChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GameChat.entitlements; sourceTree = "<group>"; };
+		AD8526B31FF2F210005CCCEB /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		AD9E3A921FFA366A00448269 /* Chatlistitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chatlistitem.swift; sourceTree = "<group>"; };
+		AD9E3A941FFA79A500448269 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		ADA2BB8B1FFC28AE00DA1F6E /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		ADCD646C1FFD6AAD00A2C559 /* ChatListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListDataSource.swift; sourceTree = "<group>"; };
+		ADD7B96E1FF806A30030C7A4 /* ChatListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +60,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2577E42D5AC2BA4ACDF477F /* Pods_GameChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3690F75D1B3CB6F376C9C87A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EE281069DF171AC8183E82C /* Pods_GameChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9864B1DF40AEC50A1F442DED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A899AFB6B73ADAB57EE929A5 /* Pods-GameChat.debug.xcconfig */,
+				4AA52D11896DC6EC45CCBA52 /* Pods-GameChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AD57B5B31FF16D5A00AC61C8 = {
 			isa = PBXGroup;
 			children = (
 				AD57B5BE1FF16D5A00AC61C8 /* GameChat */,
 				AD57B5BD1FF16D5A00AC61C8 /* Products */,
+				9864B1DF40AEC50A1F442DED /* Pods */,
+				3690F75D1B3CB6F376C9C87A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +105,44 @@
 		AD57B5BE1FF16D5A00AC61C8 /* GameChat */ = {
 			isa = PBXGroup;
 			children = (
-				AD57B5BF1FF16D5A00AC61C8 /* AppDelegate.swift */,
-				AD57B5C11FF16D5A00AC61C8 /* ViewController.swift */,
+				ADB176291FF980E800715953 /* Models */,
+				AD6B61811FF63177009AD906 /* Chat */,
+				AD8526B21FF2E0FB005CCCEB /* GameChat.entitlements */,
 				AD57B5C31FF16D5A00AC61C8 /* Main.storyboard */,
+				AD57B5BF1FF16D5A00AC61C8 /* AppDelegate.swift */,
+				AD57B5C11FF16D5A00AC61C8 /* LoginViewController.swift */,
+				AD8526B31FF2F210005CCCEB /* SignupViewController.swift */,
+				50FAD598200B46D500DF06C3 /* CreateUserViewController.swift */,
+				AD38FEDF2025247000CB2C9B /* ResetPasswordViewController.swift */,
+				AD22B198202A5EED00AEDC86 /* CustomSegues.swift */,
 				AD57B5C91FF16D5A00AC61C8 /* Assets.xcassets */,
-				AD57B5CB1FF16D5A00AC61C8 /* LaunchScreen.storyboard */,
 				AD57B5CE1FF16D5A00AC61C8 /* Info.plist */,
+				AD57B5CB1FF16D5A00AC61C8 /* LaunchScreen.storyboard */,
+				AD57B5D41FF1732000AC61C8 /* GoogleService-Info.plist */,
+				5093DFEF20306D14007A17B3 /* UIColorExtension.swift */,
 				AD57B5C61FF16D5A00AC61C8 /* GameChat.xcdatamodeld */,
 			);
 			path = GameChat;
+			sourceTree = "<group>";
+		};
+		AD6B61811FF63177009AD906 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				AD6B61821FF631BD009AD906 /* ChatStoryboard.storyboard */,
+				ADD7B96E1FF806A30030C7A4 /* ChatListTableViewController.swift */,
+				ADA2BB8B1FFC28AE00DA1F6E /* ChatCell.swift */,
+				ADCD646C1FFD6AAD00A2C559 /* ChatListDataSource.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		ADB176291FF980E800715953 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD9E3A921FFA366A00448269 /* Chatlistitem.swift */,
+				AD9E3A941FFA79A500448269 /* Message.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +152,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD57B5D11FF16D5A00AC61C8 /* Build configuration list for PBXNativeTarget "GameChat" */;
 			buildPhases = (
+				9B381833153A649482E7A6C0 /* [CP] Check Pods Manifest.lock */,
 				AD57B5B81FF16D5A00AC61C8 /* Sources */,
 				AD57B5B91FF16D5A00AC61C8 /* Frameworks */,
 				AD57B5BA1FF16D5A00AC61C8 /* Resources */,
+				6157EE53B0DF525B1ED3C411 /* [CP] Embed Pods Frameworks */,
+				7139BF52CE911B809D2E3C0E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -100,6 +181,11 @@
 					AD57B5BB1FF16D5A00AC61C8 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -127,12 +213,99 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD57B5CD1FF16D5A00AC61C8 /* LaunchScreen.storyboard in Resources */,
+				AD57B5D51FF1732000AC61C8 /* GoogleService-Info.plist in Resources */,
 				AD57B5CA1FF16D5A00AC61C8 /* Assets.xcassets in Resources */,
 				AD57B5C51FF16D5A00AC61C8 /* Main.storyboard in Resources */,
+				AD6B61831FF631BD009AD906 /* ChatStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6157EE53B0DF525B1ED3C411 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GameChat/Pods-GameChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GameChat/Pods-GameChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7139BF52CE911B809D2E3C0E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GameChat/Pods-GameChat-resources.sh",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Assets/JSQMessagesAssets.bundle",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Controllers/JSQMessagesViewController.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesCollectionViewCellIncoming.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesCollectionViewCellOutgoing.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesLoadEarlierHeaderView.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesToolbarContentView.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesTypingIndicatorFooterView.xib",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GameChat/Pods-GameChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B381833153A649482E7A6C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GameChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AD57B5B81FF16D5A00AC61C8 /* Sources */ = {
@@ -140,8 +313,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD57B5C81FF16D5A00AC61C8 /* GameChat.xcdatamodeld in Sources */,
-				AD57B5C21FF16D5A00AC61C8 /* ViewController.swift in Sources */,
+				50FAD599200B46D500DF06C3 /* CreateUserViewController.swift in Sources */,
+				ADCD646D1FFD6AAD00A2C559 /* ChatListDataSource.swift in Sources */,
+				AD38FEE02025247000CB2C9B /* ResetPasswordViewController.swift in Sources */,
+				AD22B199202A5EED00AEDC86 /* CustomSegues.swift in Sources */,
+				ADA2BB8C1FFC28AE00DA1F6E /* ChatCell.swift in Sources */,
+				5093DFF020306D14007A17B3 /* UIColorExtension.swift in Sources */,
+				AD57B5C21FF16D5A00AC61C8 /* LoginViewController.swift in Sources */,
+				ADD7B96F1FF806A30030C7A4 /* ChatListTableViewController.swift in Sources */,
+				AD8526B41FF2F210005CCCEB /* SignupViewController.swift in Sources */,
+				AD9E3A931FFA366A00448269 /* Chatlistitem.swift in Sources */,
 				AD57B5C01FF16D5A00AC61C8 /* AppDelegate.swift in Sources */,
+				AD9E3A951FFA79A500448269 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,9 +459,12 @@
 		};
 		AD57B5D21FF16D5A00AC61C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A899AFB6B73ADAB57EE929A5 /* Pods-GameChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GameChat/GameChat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D39SEA782X;
 				INFOPLIST_FILE = GameChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = idotalmor.com.GameChat;
@@ -290,9 +476,12 @@
 		};
 		AD57B5D31FF16D5A00AC61C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AA52D11896DC6EC45CCBA52 /* Pods-GameChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GameChat/GameChat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D39SEA782X;
 				INFOPLIST_FILE = GameChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = idotalmor.com.GameChat;

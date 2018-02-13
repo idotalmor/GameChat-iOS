@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H3U-ZE-yqa">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wME-Uk-Nbg">
+            <objects>
+                <viewController id="Kox-aq-NeS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eSv-22-tKg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="65Y-um-iEO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="igC-D9-9mW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IPJ-if-fhn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1692" y="153.37331334332833"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="nVv-WD-xde">
+            <objects>
+                <tabBarController storyboardIdentifier="ChatTableView" id="H3U-ZE-yqa" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="nRD-wM-IYl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.90980392160000001" green="0.29411764709999999" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="oXQ-Fw-ZEe" kind="relationship" relationship="viewControllers" id="yl9-Pn-S1w"/>
+                        <segue destination="OfT-aN-gSA" kind="relationship" relationship="viewControllers" id="Zyc-8B-dpf"/>
+                        <segue destination="EAN-wJ-3Mz" kind="custom" identifier="ChatToLoginStoryboard" customClass="SegueFromRight" customModule="GameChat" customModuleProvider="target" id="DrE-8G-0LW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZBV-J0-SSE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3766" y="-179"/>
+        </scene>
+        <!--Chat List Table View Controller-->
+        <scene sceneID="Uho-tU-GY4">
+            <objects>
+                <viewController id="Tmq-CX-bT5" customClass="ChatListTableViewController" customModule="GameChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nw1-W7-6dZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pO-pa-zaW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="9wv-Ui-5W3"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Profile Image" id="6TJ-Ce-hFI"/>
+                                    <barButtonItem width="15" style="plain" systemItem="fixedSpace" id="FzQ-EO-YMX"/>
+                                    <barButtonItem systemItem="add" id="9c2-VY-S3U">
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="addChat:" destination="Tmq-CX-bT5" id="hb1-h4-HWy"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ZXQ-ou-Sbe"/>
+                                    <barButtonItem title="Sign Out" id="SJZ-aN-kGp">
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="signOut:" destination="Tmq-CX-bT5" id="8y0-hv-7zo"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.90980392156862744" green="0.29411764705882354" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A8C-MC-t7m">
+                                <rect key="frame" x="0.0" y="44" width="375" height="510"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Chatlistitem" id="atf-Xk-aad" customClass="ChatCell" customModule="GameChat">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="atf-Xk-aad" id="yYF-OG-A4W">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DOg-6S-cOn">
+                                                    <rect key="frame" x="16" y="5" width="33" height="33"/>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="O1I-8J-AUg">
+                                                    <rect key="frame" x="65" y="1" width="81.5" height="41.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRG-6q-87R">
+                                                            <rect key="frame" x="0.0" y="0.0" width="81.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Last Msg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCV-sN-Rfn">
+                                                            <rect key="frame" x="0.0" y="25.5" width="55.5" height="16"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s31-tM-wov">
+                                                    <rect key="frame" x="285" y="11.5" width="42" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="O1I-8J-AUg" firstAttribute="leading" secondItem="DOg-6S-cOn" secondAttribute="trailing" constant="16" id="0g3-c6-ub2"/>
+                                                <constraint firstItem="DOg-6S-cOn" firstAttribute="leading" secondItem="yYF-OG-A4W" secondAttribute="leading" constant="16" id="DDN-Ed-Pch"/>
+                                                <constraint firstItem="DOg-6S-cOn" firstAttribute="top" secondItem="yYF-OG-A4W" secondAttribute="top" constant="5" id="GEb-SC-Zpm"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="s31-tM-wov" secondAttribute="trailing" constant="7" id="VRB-6w-Tlw"/>
+                                                <constraint firstAttribute="bottom" secondItem="DOg-6S-cOn" secondAttribute="bottom" constant="5.5" id="bta-Ue-Kew"/>
+                                                <constraint firstItem="O1I-8J-AUg" firstAttribute="centerY" secondItem="yYF-OG-A4W" secondAttribute="centerY" id="iWU-ol-gcN"/>
+                                                <constraint firstItem="s31-tM-wov" firstAttribute="centerY" secondItem="yYF-OG-A4W" secondAttribute="centerY" id="qds-X2-Gq2"/>
+                                                <constraint firstAttribute="trailing" secondItem="DOg-6S-cOn" secondAttribute="trailing" constant="293" id="uAt-Lo-4dG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="chatFriendName" destination="vRG-6q-87R" id="R6K-7i-9sJ"/>
+                                            <outlet property="chatImg" destination="DOg-6S-cOn" id="fEW-BK-R9M"/>
+                                            <outlet property="lastMsg" destination="ZCV-sN-Rfn" id="1EN-il-On3"/>
+                                            <outlet property="unreadMsg" destination="s31-tM-wov" id="Hje-nF-ow1"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="A8C-MC-t7m" firstAttribute="top" secondItem="7pO-pa-zaW" secondAttribute="bottom" id="Qeu-9P-06a"/>
+                            <constraint firstItem="7pO-pa-zaW" firstAttribute="top" secondItem="eXt-ia-wMv" secondAttribute="top" id="TCV-G6-mYE"/>
+                            <constraint firstItem="eXt-ia-wMv" firstAttribute="trailing" secondItem="7pO-pa-zaW" secondAttribute="trailing" id="bpU-oQ-H1n"/>
+                            <constraint firstItem="eXt-ia-wMv" firstAttribute="trailing" secondItem="A8C-MC-t7m" secondAttribute="trailing" id="fNZ-Ca-fQS"/>
+                            <constraint firstItem="A8C-MC-t7m" firstAttribute="leading" secondItem="eXt-ia-wMv" secondAttribute="leading" id="mSF-qY-9hW"/>
+                            <constraint firstItem="7pO-pa-zaW" firstAttribute="leading" secondItem="Nw1-W7-6dZ" secondAttribute="leading" id="psO-Hm-feJ"/>
+                            <constraint firstItem="eXt-ia-wMv" firstAttribute="bottom" secondItem="A8C-MC-t7m" secondAttribute="bottom" id="snS-Hm-Kaz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eXt-ia-wMv"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nZ7-ow-1I8"/>
+                    <connections>
+                        <outlet property="profileImage" destination="6TJ-Ce-hFI" id="vw2-6Q-nJk"/>
+                        <outlet property="tableView" destination="A8C-MC-t7m" id="mXU-Ju-fNn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vBo-Wm-Z36" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1692" y="-537.48125937031489"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="3pB-rf-OLA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="EAN-wJ-3Mz" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3oE-uZ-4o5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-817" y="-733"/>
+        </scene>
+        <!--Games-->
+        <scene sceneID="h3f-yh-b45">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OfT-aN-gSA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Games" image="icons8-gamesdarkred" selectedImage="icons8-gameswhite" id="JJP-dN-XIl"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="KjA-uP-qcY">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.90980392156862744" green="0.29411764705882354" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Kox-aq-NeS" kind="relationship" relationship="rootViewController" id="MWx-Qk-Ep9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kch-9c-qhR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2413.5999999999999" y="154.27286356821591"/>
+        </scene>
+        <!--Chats-->
+        <scene sceneID="l7F-s8-FUP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oXQ-Fw-ZEe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Chats" image="icons8-chat_filleddarkred" selectedImage="icons8-chat_filledwhite" id="NEJ-bq-LKe">
+                        <color key="badgeColor" red="0.90980392160000001" green="0.29411764709999999" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="ShM-VQ-36Z">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.90980392160000001" green="0.29411764709999999" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.90980392160000001" green="0.29411764709999999" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.90980392160000001" green="0.29411764709999999" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Tmq-CX-bT5" kind="relationship" relationship="rootViewController" id="YSc-zZ-ZbV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DzG-wH-fj9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2414" y="-537"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-chat_filleddarkred" width="32" height="32"/>
+        <image name="icons8-chat_filledwhite" width="32" height="32"/>
+        <image name="icons8-gamesdarkred" width="32" height="32"/>
+        <image name="icons8-gameswhite" width="32" height="32"/>
+    </resources>
+</document>
